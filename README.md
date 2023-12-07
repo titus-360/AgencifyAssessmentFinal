@@ -123,7 +123,7 @@ The command above  builds a docker image and and assigns the name agencify/valid
 Database
 Database Choice
 
-Initially, the project was intended to use SQLite 3 as the preferred database. However, due to challenges with Docker installation, I opted to use MySQL for testing purposes.
+Initially, the project was intended to use SQLite 3 as the preferred database. However, it was a hustle setting it up and meeting the deadline, so I opted to use MySQL for testing purposes.
 
 Database Configuration
 
@@ -131,7 +131,7 @@ Database Name: agencify
 
 **Challenges Faced**
 
-I encountered issues with Docker installation, which affected the planned use of SQLite 3. To keep the project moving forward, I decided to use MySQL as an alternative for testing purposes.
+It was a challenge installing and setting up docker and meet the deadline, which affected the planned use of SQLite 3. To keep the project moving forward, I decided to use MySQL as an alternative for testing purposes.
 
 
 _**Frontend REGEX Validation Results:**_
