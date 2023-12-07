@@ -106,6 +106,20 @@ To run the backend tests, use the following command:
 ```
 ./gradlew TestApplicationTests
 ```
+To build the image for the frontend use:
+
+````
+ docker build -t agencify/valid-phonenumber-fe
+ 
+`````
+For the Backend docker image use:
+
+````
+./gradlew bootBuildImage --imageName=agencify/valid-phone-number
+
+````
+The command above  builds a docker image and and assigns the name agencify/valid-phone-number
+
 Database
 Database Choice
 
@@ -133,6 +147,18 @@ _**Frontend REGEX Validation Results:**_
 
 4. The image below shows REGEX validation when correct phone number, country, state and country code are entered:
 ![ValidPhoneNumber](https://github.com/titus-360/AgencifyAssessment/assets/124245986/2fa922b6-a7a5-4046-9f99-ce8c3f9b6d24)
+
+
+Other links to my other projects are attached here:
+
+1. Student portal - This is a student portal application.
+   https://github.com/bundi360/student_portal
+2. Chat App - This is a project where I created a chat application as I was learning spring boot.
+   https://github.com/bundi360/Chat-app
+3. Smart Champions Sacco Management system  - This is a project I created as part of my final year to help manage Smart Champions Sacco Projact management and HR duties.
+   https://github.com/bundi360/Smart-champions-Human-resource-management-system
+4. Data Structures in Java - This is a repository I created as I was learning  DSA in java.
+   https://github.com/bundi360/data-structures-in-java
 
 
 
