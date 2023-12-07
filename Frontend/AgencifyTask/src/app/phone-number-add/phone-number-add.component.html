@@ -1,0 +1,33 @@
+<div class="phone-number-add-container">
+  <h2>Add Phone Number</h2>
+
+  <form (ngSubmit)="addPhoneNumber()">
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <input type="text" id="country" [(ngModel)]="newPhoneNumber.country" name="country" placeholder="Enter country"
+             required>
+    </div>
+
+    <div class="form-group">
+      <label for="state">State:</label>
+      <input type="text" id="state" [(ngModel)]="newPhoneNumber.state" name="state" placeholder="Enter state" required>
+    </div>
+
+    <div class="form-group">
+      <label for="countryCode">Country Code:</label>
+      <input type="text" id="countryCode" [(ngModel)]="newPhoneNumber.countryCode" name="countryCode"
+             placeholder="Enter country code" required>
+    </div>
+
+    <div class="form-group">
+      <label for="number">Number:</label>
+      <input type="text" id="number" [(ngModel)]="newPhoneNumber.number" name="number" placeholder="Enter phone number"
+             required>
+    </div>
+
+    <div [ngClass]="successClass">{{ responseMessage }}</div>
+
+
+    <button type="submit">Add Phone Number</button>
+  </form>
+</div>

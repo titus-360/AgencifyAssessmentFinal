@@ -1,0 +1,19 @@
+<div class="phone-number-list-container">
+  <h2>Phone Number List</h2>
+
+  <div *ngFor="let phoneNumber of phoneNumbers" class="phone-number-item">
+    <p><strong>Country:</strong> {{ phoneNumber.number }}</p>
+    <p><strong>State:</strong> {{ phoneNumber.state }}</p>
+    <p><strong>Country Code:</strong> {{ phoneNumber.countryCode }}</p>
+    <p><strong>Number:</strong> {{ phoneNumber.number }}</p>
+    <hr>
+  </div>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 0">Previous</button>
+    <span>{{ currentPage + 1 }}</span>
+    <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === totalPages - 1">Next</button>
+  </div>
+</div>
+
